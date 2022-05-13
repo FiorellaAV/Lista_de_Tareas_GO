@@ -77,4 +77,9 @@ func main() {
 	ls.agregarALista(&t2)
 	ls.imprimirLista()
 
+	mapaTareas := make(map[string]*listaDeTareas)
+
+	mapaTareas["Fiorella"] = &ls
+	fmt.Println("**Tareas de Fiorella** \n")
+	mapaTareas["Fiorella"].imprimirLista()
 }
